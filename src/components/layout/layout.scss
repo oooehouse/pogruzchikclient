@@ -1,0 +1,17 @@
+@import '../../css/const.scss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.pages-wrapper {
+  flex: 1 0 auto;
+  margin: 0 auto;
+  max-width: $desktop;
+}
