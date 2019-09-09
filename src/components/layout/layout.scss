@@ -23,4 +23,8 @@ body,
   grid-template-columns: 305px 1fr;
   width: $desktop;
   margin: 0 auto;
+
+  @media (max-width: $desktop) {
+    width: 100%;
+  }
 }

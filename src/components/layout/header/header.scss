@@ -23,6 +23,10 @@
     right: 0;
     margin: 0 auto;
     width: $desktop;
+
+    @media (max-width: $desktop) {
+      width: 100%;
+    }
   }
 
   .left-background {
