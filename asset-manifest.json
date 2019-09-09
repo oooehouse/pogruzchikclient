@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/pogruzchikclient/static/css/main.0321abcd.chunk.css",
+    "main.js": "/pogruzchikclient/static/js/main.5ba2732d.chunk.js",
+    "main.js.map": "/pogruzchikclient/static/js/main.5ba2732d.chunk.js.map",
+    "runtime~main.js": "/pogruzchikclient/static/js/runtime~main.e012db55.js",
+    "runtime~main.js.map": "/pogruzchikclient/static/js/runtime~main.e012db55.js.map",
+    "static/js/2.c918b11a.chunk.js": "/pogruzchikclient/static/js/2.c918b11a.chunk.js",
+    "static/js/2.c918b11a.chunk.js.map": "/pogruzchikclient/static/js/2.c918b11a.chunk.js.map",
+    "index.html": "/pogruzchikclient/index.html",
+    "precache-manifest.a96cd3bf0ff697b860ef5b53e91b272c.js": "/pogruzchikclient/precache-manifest.a96cd3bf0ff697b860ef5b53e91b272c.js",
+    "service-worker.js": "/pogruzchikclient/service-worker.js",
+    "static/css/main.0321abcd.chunk.css.map": "/pogruzchikclient/static/css/main.0321abcd.chunk.css.map",
+    "static/media/case_concept.jpg": "/pogruzchikclient/static/media/case_concept.de6e8c68.jpg",
+    "static/media/cat-el-pogr.jpg": "/pogruzchikclient/static/media/cat-el-pogr.1406d343.jpg",
+    "static/media/doosan.jpg": "/pogruzchikclient/static/media/doosan.c0cdf79c.jpg",
+    "static/media/front_pogr.png": "/pogruzchikclient/static/media/front_pogr.c01556f7.png",
+    "static/media/mini_pogr.jpg": "/pogruzchikclient/static/media/mini_pogr.4f6f88c4.jpg",
+    "static/media/pogr_building.jpg": "/pogruzchikclient/static/media/pogr_building.146afef2.jpg",
+    "static/media/header.scss": "/pogruzchikclient/static/media/porg_left.634f7162.jpg",
+    "static/media/telescop_pogr.jpg": "/pogruzchikclient/static/media/telescop_pogr.af7febfd.jpg",
+    "static/media/univers_front_pogr.jpg": "/pogruzchikclient/static/media/univers_front_pogr.5ca44417.jpg"
+  }
+}
