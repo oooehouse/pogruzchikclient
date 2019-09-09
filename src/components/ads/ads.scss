@@ -1,0 +1,18 @@
+@import '../../css/const.scss';
+
+.adds-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+
+  .adds-unit-wrapper {
+    border: 2px solid $color-primery;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1.2em;
+  }
+}
+
+// .ads-wrapper {
+//   background-color: red;
+// }

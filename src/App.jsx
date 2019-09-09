@@ -1,15 +1,21 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import store from './redux/store/store';
-import Layout from './components/layout/Layout';
+import { Router } from 'react-router-dom';
+
+import Layout from './components/layout/Layout.jsx';
+import SiteRouter from './router/SiteRouter.jsx';
+import { createBrowserHistory } from 'history';
+
+export const history = createBrowserHistory();
 
 function App() {
   return (
-    <Provider store={store}>
+    <Router history={history}>
       <div className='app'>
-        <Layout />
+        <Layout>
+          <SiteRouter />
+        </Layout>
       </div>
-    </Provider>
+    </Router>
   );
 }
 

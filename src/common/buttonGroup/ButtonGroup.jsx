@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import './nav.scss';
+import './buttonGroup.scss';
 
 const ButtonGroup = ({ children, className, vertical, ...attrs }) => {
   const classes = classNames('btn-group', className, { vertical });

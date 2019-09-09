@@ -1,10 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const Footer = props => {
-  return <div>footer</div>;
+  return (
+    <div>
+      <p className='text-center'>
+        Связывайтесь с нами по электронной почте:{' '}
+        <a href='mailto:domidei@tut.by'>domidei@tut.by</a>
+      </p>
+    </div>
+  );
 };
-
-Footer.propTypes = {};
 
 export default Footer;

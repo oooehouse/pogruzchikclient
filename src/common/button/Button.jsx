@@ -21,7 +21,7 @@ const Button = ({
     }
   };
 
-  const classes = classNames('btn', className, { active });
+  const classes = classNames('btn', 'text-left', className, { active });
 
   const Tag = attrs.href ? 'a' : attrs.to ? NavLink : 'button';
 
