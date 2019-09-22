@@ -17,16 +17,16 @@ class Input extends Component {
   };
 
   render() {
-    const classes = classNames('input', className, { error });
     const {
       id,
       className,
       label,
       value,
-      passwordtogglevisible,
+      passwordToggleVisible,
       error,
       ...attrs
     } = this.props;
+    const classes = classNames('input', className, { error });
     const classesIcon = classNames(
       'fa',
       'eye-icon-password',
@@ -43,7 +43,7 @@ class Input extends Component {
           )}
           {attrs.required && <span className='inputRequired'>Required</span>}
         </div>
-        {attrs.name === 'password' || attrs.name === 'password2' ? (
+        {attrs.name === 'password' || attrs.name === 'rePassword' ? (
           <Fragment>
             <input
               autoComplete='user password'
@@ -53,7 +53,7 @@ class Input extends Component {
               placeholder={attrs.placeholder}
               {...attrs}
             />
-            <span className={classesIcon} onClick={passwordtogglevisible} />
+            <span className={classesIcon} onClick={passwordToggleVisible} />
           </Fragment>
         ) : (
           <input

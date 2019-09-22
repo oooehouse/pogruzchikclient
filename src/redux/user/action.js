@@ -68,15 +68,8 @@ export const loadUserError = () => ({
 });
 
 export const logOut = data => ({
-  type: USER_LOGOUT,
-  payload: data
-});
-export const logOutSuccess = data => ({
   type: USER_LOGOUT_SUCCESS,
   payload: data
-});
-export const logOutError = () => ({
-  type: USER_LOGOUT_ERROR
 });
 
 export const deleteUser = data => ({

@@ -14,6 +14,7 @@ import VolvoConcept from '../components/news/units/volvoConcept/VolvoConcept.jsx
 import CaseConcept from '../components/news/units/caseConcept/CaseConcept.jsx';
 import Doosan from '../components/news/units/doosan/Doosan.jsx';
 import CatElectroPogr from '../components/news/units/catElectroPogr/CatElectroPogr.jsx';
+import LogInPage from '../components/pages/logIn/LogInPage';
 
 const SiteRouter = () => {
   return (
@@ -32,6 +33,7 @@ const SiteRouter = () => {
       <Route exact path='/concept-case' component={CaseConcept} />
       <Route exact path='/doosan' component={Doosan} />
       <Route exact path='/cat-electro-pogr' component={CatElectroPogr} />
+      <Route exact path='/log-in' component={LogInPage} />
     </Switch>
   );
 };

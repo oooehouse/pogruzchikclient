@@ -59,4 +59,26 @@
     background-position: right center;
     opacity: 0.2;
   }
+
+  .header-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    // cursor: pointer;
+    cursor: pointer;
+    z-index: 6;
+
+    .header-menu-button {
+      font-size: 100%;
+      font-family: inherit;
+      border: 0;
+      padding: 0;
+      background-color: transparent;
+      padding: 10px;
+      cursor: pointer;
+
+      .fas {
+      }
+    }
+  }
 }
