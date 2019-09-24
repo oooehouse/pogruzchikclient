@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/pogruzchikclient/precache-manifest.a96cd3bf0ff697b860ef5b53e91b272c.js"
+  "/pogruzchikclient/precache-manifest.7b0f3cc73b8c8c2404479e2b92f618b4.js"
 );
 
 self.addEventListener('message', (event) => {
