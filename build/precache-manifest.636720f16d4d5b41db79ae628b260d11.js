@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1a765163dbcfa2fbac16843cdf5ba44f",
+    "revision": "61b84bae3b801c01ea54e7893208452a",
     "url": "/pogruzchikclient/index.html"
   },
   {
-    "revision": "016fa37f6e692712bd68",
+    "revision": "9bb19174567cf40d6465",
     "url": "/pogruzchikclient/static/css/main.74e8b1d0.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pogruzchikclient/static/js/2.acfd17e1.chunk.js"
   },
   {
-    "revision": "016fa37f6e692712bd68",
-    "url": "/pogruzchikclient/static/js/main.0e6d6308.chunk.js"
+    "revision": "9bb19174567cf40d6465",
+    "url": "/pogruzchikclient/static/js/main.615d1d0f.chunk.js"
   },
   {
     "revision": "b7036450eb5c364bf041",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pogruzchikclient/static/css/main.74e8b1d0.chunk.css",
-    "main.js": "/pogruzchikclient/static/js/main.0e6d6308.chunk.js",
-    "main.js.map": "/pogruzchikclient/static/js/main.0e6d6308.chunk.js.map",
+    "main.js": "/pogruzchikclient/static/js/main.615d1d0f.chunk.js",
+    "main.js.map": "/pogruzchikclient/static/js/main.615d1d0f.chunk.js.map",
     "runtime~main.js": "/pogruzchikclient/static/js/runtime~main.e012db55.js",
     "runtime~main.js.map": "/pogruzchikclient/static/js/runtime~main.e012db55.js.map",
     "static/js/2.acfd17e1.chunk.js": "/pogruzchikclient/static/js/2.acfd17e1.chunk.js",
     "static/js/2.acfd17e1.chunk.js.map": "/pogruzchikclient/static/js/2.acfd17e1.chunk.js.map",
     "index.html": "/pogruzchikclient/index.html",
-    "precache-manifest.7b0f3cc73b8c8c2404479e2b92f618b4.js": "/pogruzchikclient/precache-manifest.7b0f3cc73b8c8c2404479e2b92f618b4.js",
+    "precache-manifest.636720f16d4d5b41db79ae628b260d11.js": "/pogruzchikclient/precache-manifest.636720f16d4d5b41db79ae628b260d11.js",
     "service-worker.js": "/pogruzchikclient/service-worker.js",
     "static/css/main.74e8b1d0.chunk.css.map": "/pogruzchikclient/static/css/main.74e8b1d0.chunk.css.map",
     "static/media/case_concept.jpg": "/pogruzchikclient/static/media/case_concept.de6e8c68.jpg",
