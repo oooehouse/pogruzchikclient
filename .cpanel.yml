@@ -1,3 +1,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/build/
+    - /bin/cp -a * $DEPLOYPATH
