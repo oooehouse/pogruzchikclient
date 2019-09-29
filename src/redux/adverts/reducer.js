@@ -1,26 +1,26 @@
 import {
-  CREATE_NEWS_SUCCESS,
-  CREATE_NEWS_ERROR,
-  DELETE_NEWS_SUCCESS,
-  DELETE_NEWS_ERROR
+  CREATE_ADVERT_SUCCESS,
+  CREATE_ADVERT_ERROR,
+  DELETE_ADVERT_SUCCESS,
+  DELETE_ADVERT_ERROR
 } from './types';
 
 const initialState = {
   news: [],
-  certainNews: null,
+  certainAdvert: null,
   loading: true
 };
 
 export default (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
-    case CREATE_NEWS_SUCCESS:
+    case CREATE_ADVERT_SUCCESS:
       return {
         ...state,
         news: [...state.news, payload],
         loading: false
       };
-    case DELETE_NEWS_SUCCESS:
+    case DELETE_ADVERT_SUCCESS:
       return {
         ...state,
         news: state.news.filter(news => {
@@ -28,8 +28,8 @@ export default (state = initialState, action) => {
         }),
         loading: false
       };
-    case CREATE_NEWS_ERROR:
-    case DELETE_NEWS_ERROR:
+    case CREATE_ADVERT_ERROR:
+    case DELETE_ADVERT_ERROR:
     default:
       return state;
   }

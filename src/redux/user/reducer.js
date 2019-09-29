@@ -7,8 +7,7 @@ import {
   CHANGE_PROFILE_ERROR,
   USER_LOAD_SUCCESS,
   USER_LOAD_ERROR,
-  USER_LOGOUT_SUCCESS,
-  USER_LOGOUT_ERROR
+  USER_LOGOUT_SUCCESS
 } from './types';
 
 const initialState = {
@@ -27,7 +26,7 @@ export default (state = initialState, action) => {
     case CHANGE_PROFILE_SUCCESS:
       return {
         ...state,
-        user: payload,
+        user: payload.user,
         isAuthenticated: true,
         loading: false
       };
@@ -35,7 +34,6 @@ export default (state = initialState, action) => {
     case REGISTER_ERROR:
     case LOGIN_ERROR:
     case CHANGE_PROFILE_ERROR:
-    case USER_LOGOUT_ERROR:
     case USER_LOGOUT_SUCCESS:
       return {
         ...state,

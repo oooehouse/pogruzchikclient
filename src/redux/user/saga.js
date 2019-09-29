@@ -5,7 +5,6 @@ import {
   LOGIN,
   CHANGE_PROFILE,
   USER_LOAD,
-  USER_LOGOUT,
   DELETE_USER
 } from './types';
 
@@ -25,13 +24,13 @@ import {
 // Register user
 function* register(data) {
   try {
-    const userData = yield call(callRegister, data);
+    const userData = yield call(callRegister, data.payload);
     yield put(registerSuccess(userData.data));
   } catch (err) {
     yield put(registerError());
   }
 }
-const callRegister = data => callApi().post('api/user/register');
+const callRegister = data => callApi().post('api/users/register', data);
 
 // Log in user
 function* login(data) {
@@ -42,7 +41,7 @@ function* login(data) {
     yield put(loginError());
   }
 }
-const callLogin = data => callApi().post('api/user/login');
+const callLogin = data => callApi().post('api/users/login', data);
 
 // Change profile user
 function* changeProfile(data) {
@@ -53,7 +52,7 @@ function* changeProfile(data) {
     yield put(changeProfileError());
   }
 }
-const callChangeProfile = data => callApi().put('api/user');
+const callChangeProfile = data => callApi().put('api/users', data);
 
 // Load user
 function* loadUser(data) {
@@ -64,7 +63,7 @@ function* loadUser(data) {
     yield put(loadUserError());
   }
 }
-const callLoadUser = data => callApi().get('api/user');
+const callLoadUser = data => callApi().get('api/users');
 
 // delete user
 function* deleteUser(data) {
@@ -75,7 +74,7 @@ function* deleteUser(data) {
     yield put(deleteUserError());
   }
 }
-const callDeleteUser = data => callApi().get('api/user');
+const callDeleteUser = data => callApi().get('api/users');
 
 const userSaga = [
   takeEvery(REGISTER, register),
