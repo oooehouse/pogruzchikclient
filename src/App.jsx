@@ -6,6 +6,7 @@ import Layout from './components/layout/Layout.jsx';
 import SiteRouter from './router/SiteRouter.jsx';
 import { createBrowserHistory } from 'history';
 import { loadUser } from './redux/user/action';
+import { loadAdverts } from './redux/adverts/action';
 
 export const history = createBrowserHistory();
 
@@ -15,8 +16,13 @@ class App extends Component {
     this.state = {};
   }
 
+  // componentWillMount() {
+  //   const { loadAdverts } = this.props;
+  // }
+
   componentDidMount() {
-    const { token, loadUser } = this.props;
+    const { token, loadUser, loadAdverts } = this.props;
+    loadAdverts();
     if (!!token) {
       loadUser();
     }
@@ -37,11 +43,12 @@ class App extends Component {
 
 const mapStateToProps = state => {
   return {
-    isAuthenticated: state.user.isAuthenticated
+    isAuthenticated: state.user.isAuthenticated,
+    token: state.user.token
   };
 };
 
 export default connect(
   mapStateToProps,
-  { loadUser }
+  { loadUser, loadAdverts }
 )(App);

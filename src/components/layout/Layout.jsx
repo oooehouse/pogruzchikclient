@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import './layout.scss';
-import Header from './header/Header.jsx';
+import Header from '../../containers/Header';
 import Footer from './footer/Footer.jsx';
 import Nav from '../nav/Nav.jsx';
 import News from '../news/News.jsx';

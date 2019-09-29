@@ -12,7 +12,7 @@ import {
 
 const initialState = {
   token: localStorage.getItem('token'),
-  isAuthenticated: null,
+  isAuthenticated: false,
   loading: true,
   user: null
 };
@@ -21,6 +21,12 @@ export default (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
     case USER_LOAD_SUCCESS:
+      return {
+        ...state,
+        user: payload,
+        isAuthenticated: true,
+        loading: false
+      };
     case REGISTER_SUCCESS:
     case LOGIN_SUCCESS:
     case CHANGE_PROFILE_SUCCESS:
@@ -39,7 +45,7 @@ export default (state = initialState, action) => {
         ...state,
         user: null,
         token: null,
-        isAuthenticated: true,
+        isAuthenticated: false,
         loading: false
       };
     default:

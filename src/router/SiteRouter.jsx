@@ -1,5 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+
+import PrivateRoute from './PrivateRoute';
 import Home from '../components/pages/home/Home.jsx';
 import UsePogr from '../components/pages/usePogr/UsePogr.jsx';
 import ClearSnow from '../components/pages/clearSnow/ClearSnow.jsx';
@@ -14,7 +16,9 @@ import VolvoConcept from '../components/news/units/volvoConcept/VolvoConcept.jsx
 import CaseConcept from '../components/news/units/caseConcept/CaseConcept.jsx';
 import Doosan from '../components/news/units/doosan/Doosan.jsx';
 import CatElectroPogr from '../components/news/units/catElectroPogr/CatElectroPogr.jsx';
-import LogInPage from '../components/pages/logIn/LogInPage';
+import LogInPage from '../containers/LogInPage';
+import Dashboard from '../containers/Dashboard';
+import AddAdvert from '../containers/AddAdvert';
 
 const SiteRouter = () => {
   return (
@@ -34,6 +38,8 @@ const SiteRouter = () => {
       <Route exact path='/doosan' component={Doosan} />
       <Route exact path='/cat-electro-pogr' component={CatElectroPogr} />
       <Route exact path='/log-in' component={LogInPage} />
+      <PrivateRoute exact path='/dashboard' component={Dashboard} />
+      <PrivateRoute exact path='/add-advert' component={AddAdvert} />
     </Switch>
   );
 };

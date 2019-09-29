@@ -35,9 +35,9 @@ const Nav = props => {
       <Button exact to='/pogr-build'>
         Погрузчик на стройке
       </Button>
-      <Button exact to='/log-in'>
+      {/* <Button exact to='/log-in'>
         Войти / Регистрция
-      </Button>
+      </Button> */}
     </ButtonGroup>
   );
 };

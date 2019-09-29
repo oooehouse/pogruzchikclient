@@ -6,11 +6,12 @@ import { all } from 'redux-saga/effects';
 
 import rootReducer from '../reducer';
 import userSaga from '../user/saga';
+import advertSaga from '../adverts/saga';
 
 const sagaMiddleware = createSagaMiddleware();
 
 function* rootSaga() {
-  yield all([...userSaga]);
+  yield all([...userSaga, ...advertSaga]);
 }
 
 const initialState = {};

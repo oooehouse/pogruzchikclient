@@ -6,7 +6,7 @@ import {
 } from './types';
 
 const initialState = {
-  news: [],
+  adverts: [],
   certainAdvert: null,
   loading: true
 };
@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
     case CREATE_ADVERT_SUCCESS:
       return {
         ...state,
-        news: [...state.news, payload],
+        adverts: [...state.adverts, payload],
         loading: false
       };
     case DELETE_ADVERT_SUCCESS:

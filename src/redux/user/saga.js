@@ -35,8 +35,9 @@ const callRegister = data => callApi().post('api/users/register', data);
 // Log in user
 function* login(data) {
   try {
-    const userData = yield call(callLogin, data);
+    const userData = yield call(callLogin, data.payload);
     yield put(loginSuccess(userData.data));
+    localStorage.setItem('token', userData.data.token);
   } catch (err) {
     yield put(loginError());
   }
@@ -55,15 +56,15 @@ function* changeProfile(data) {
 const callChangeProfile = data => callApi().put('api/users', data);
 
 // Load user
-function* loadUser(data) {
+function* loadUser() {
   try {
-    const userData = yield call(callLoadUser, data);
+    const userData = yield call(callLoadUser);
     yield put(loadUserSuccess(userData.data));
   } catch (err) {
     yield put(loadUserError());
   }
 }
-const callLoadUser = data => callApi().get('api/users');
+const callLoadUser = () => callApi().get('api/users');
 
 // delete user
 function* deleteUser(data) {

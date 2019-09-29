@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from '../../../common/button/Button';
 import ButtonGroup from '../../../common/buttonGroup/ButtonGroup';
-import LogInForm from './logInForm/LogInForm';
+import LogInForm from '../../../containers/LogInForm';
 import RegisterForm from '../../../containers/RegisterForm';
 import { Redirect } from 'react-router-dom';
 
