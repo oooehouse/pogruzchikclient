@@ -20,7 +20,7 @@ function* createAdvert(data) {
     yield put(createAdvertError());
   }
 }
-const callCreateAdvert = inf => callApi().post('api/adverts', inf);
+const callCreateAdvert = inf => callApi().post('api/vehicle-adv', inf);
 
 // Delete advert
 function* deleteAdvert(data) {
@@ -31,7 +31,7 @@ function* deleteAdvert(data) {
     yield put(deleteAdvertError());
   }
 }
-const callDeleteAdvert = inf => callApi().delete('api/adverts/', inf);
+const callDeleteAdvert = inf => callApi().delete('api/vehicle-adv/', inf);
 
 // Load adverts
 function* loadAdverts() {
@@ -42,7 +42,7 @@ function* loadAdverts() {
     yield put(loadAdvertsError());
   }
 }
-const callLoadAdverts = () => callApi().get('api/adverts/');
+const callLoadAdverts = () => callApi().get('api/vehicle-adv/');
 
 const advertSaga = [
   takeEvery(CREATE_ADVERT, createAdvert),

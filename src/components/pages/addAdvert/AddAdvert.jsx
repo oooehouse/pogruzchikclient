@@ -26,7 +26,7 @@ class AddAdvert extends Component {
     e.preventDefault();
     const { createAdvert } = this.props;
     createAdvert({ ...this.state });
-    this.setState({ state: this.initialState });
+    this.setState(this.initialState);
   };
 
   render() {

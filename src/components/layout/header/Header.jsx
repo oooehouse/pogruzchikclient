@@ -8,28 +8,28 @@ const Header = ({ isAuthenticated, logOut, user }) => {
   return (
     <div className='header'>
       <div className='header-background'>
-        <nav className='header-menu'>
+        <nav className='header-menu font-size-1-5em'>
           {isAuthenticated ? (
             <>
               <NavLink to='/add-advert' className='header-menu-button'>
                 <i className='fas fa-plus font-size-1-5em'></i>
-                <span className='font-size-1-5em '>Добавить объявление</span>
+                <span className='font-size-1-5em'>Добавить объявление</span>
               </NavLink>
               <NavLink to='/dashboard' className='header-menu-button'>
-                <i className='fas fa-user font-size-1-5em '></i>
-                <span className='font-size-1-5em '>{user.name}</span>
+                <i className='fas fa-user font-size-1-5em'></i>
+                <span className='font-size-1-5em'>{user.name}</span>
               </NavLink>
               <NavLink
                 to='/'
                 onClick={clickLogOut}
                 className='header-menu-button'
               >
-                <i className='fas fa-sign-out-alt font-size-1-5em '></i>
+                <i className='fas fa-sign-out-alt font-size-1-5em'></i>
               </NavLink>
             </>
           ) : (
             <NavLink to='/log-in' className='header-menu-button'>
-              <i className='fas fa-sign-in-alt'></i>
+              <i className='fas fa-sign-in-alt font-size-1-5em'></i>
             </NavLink>
           )}
         </nav>

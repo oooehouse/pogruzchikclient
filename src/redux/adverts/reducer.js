@@ -2,7 +2,9 @@ import {
   CREATE_ADVERT_SUCCESS,
   CREATE_ADVERT_ERROR,
   DELETE_ADVERT_SUCCESS,
-  DELETE_ADVERT_ERROR
+  DELETE_ADVERT_ERROR,
+  LOAD_ADVERTS_SUCCESS,
+  LOAD_ADVERTS_ERROR
 } from './types';
 
 const initialState = {
@@ -20,6 +22,12 @@ export default (state = initialState, action) => {
         adverts: [...state.adverts, payload],
         loading: false
       };
+    case LOAD_ADVERTS_SUCCESS:
+      return {
+        ...state,
+        adverts: payload,
+        loading: false
+      };
     case DELETE_ADVERT_SUCCESS:
       return {
         ...state,
@@ -29,6 +37,7 @@ export default (state = initialState, action) => {
         loading: false
       };
     case CREATE_ADVERT_ERROR:
+    case LOAD_ADVERTS_ERROR:
     case DELETE_ADVERT_ERROR:
     default:
       return state;

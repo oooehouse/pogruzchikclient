@@ -41,6 +41,7 @@ export default (state = initialState, action) => {
     case LOGIN_ERROR:
     case CHANGE_PROFILE_ERROR:
     case USER_LOGOUT_SUCCESS:
+      localStorage.removeItem('token');
       return {
         ...state,
         user: null,

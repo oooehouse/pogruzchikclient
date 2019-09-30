@@ -3,7 +3,11 @@ import './ads.scss';
 import AdvertWrapper from './advertWrapper/AdvertWrapper';
 
 const Ads = ({ adverts }) => {
-  return <div>{!!adverts && adverts.map(ad => <AdvertWrapper {...ad} />)}</div>;
+  return (
+    <div className='vehicle-adv-wrapper'>
+      {!!adverts && adverts.map(ad => <AdvertWrapper key={ad._id} {...ad} />)}
+    </div>
+  );
 };
 
 export default Ads;

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import Ads from '../components/pages/addAdvert/AddAdvert';
+import Ads from '../components/ads/Ads';
 import { setAlert } from '../redux/alert/action';
 
 const mapStateToProps = state => {

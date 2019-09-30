@@ -1,4 +1,5 @@
 import React from 'react';
+import './advertWrapper.scss';
 
 const AdvertWrapper = ({
   company,
@@ -7,19 +8,20 @@ const AdvertWrapper = ({
   price,
   vehicle,
   location
-}) => {
-  return (
-    <div className='advert-wrapper'>
-      <p>Организация: {company ? company : 'нет названия'}</p>
-      <p>Описание: {description ? description : 'описание отсутствует'}</p>
-      <p>Наименование техники: {vehicle ? vehicle : 'погрузчик'}</p>
-      <p>Расположение: {location ? location : 'Минск'}</p>
-      <p>Цена: {price ? price + 'р.час' : 'договорная'}</p>
-      <p>
-        Тел.: <a href='tel:+375299452002'>+375(29)9452002</a>
-      </p>
-    </div>
-  );
-};
+}) => (
+  <div className='vehicle-adv'>
+    <p>
+      Техника: <strong> {vehicle ? vehicle : 'погрузчик'} </strong>
+    </p>
+    <p>Организация: {company ? company : 'нет названия'}</p>
+    <p>Описание: {description ? description : 'описание отсутствует'}</p>
+    <p>Расположение: {location ? location : 'Минск'}</p>
+    <p>Цена: {price ? price + ' р.час' : 'договорная'}</p>
+    <p>
+      Тел.: <a href='tel:+375299452002'>{phone}</a>
+    </p>
+  </div>
+);
+console.log('you are inside adverWrapper');
 
 export default AdvertWrapper;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.scss';
-import Ads from '../../ads/Ads.jsx';
+import Ads from '../../../containers/Ads';
 
 const Home = () => {
   return (
