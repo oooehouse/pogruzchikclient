@@ -1,8 +1,10 @@
 import {
-  CREATE_NEWS_SUCCESS,
-  CREATE_NEWS_ERROR,
+  ADD_NEWS_SUCCESS,
+  ADD_NEWS_ERROR,
   DELETE_NEWS_SUCCESS,
-  DELETE_NEWS_ERROR
+  DELETE_NEWS_ERROR,
+  CHANGE_NEWS_SUCCESS,
+  CHANGE_NEWS_ERROR
 } from './types';
 
 const initialState = {
@@ -14,7 +16,13 @@ const initialState = {
 export default (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
-    case CREATE_NEWS_SUCCESS:
+    case ADD_NEWS_SUCCESS:
+      return {
+        ...state,
+        news: [...state.news, payload],
+        loading: false
+      };
+    case CHANGE_NEWS_SUCCESS:
       return {
         ...state,
         news: [...state.news, payload],
@@ -28,7 +36,8 @@ export default (state = initialState, action) => {
         }),
         loading: false
       };
-    case CREATE_NEWS_ERROR:
+    case CHANGE_NEWS_ERROR:
+    case ADD_NEWS_ERROR:
     case DELETE_NEWS_ERROR:
     default:
       return state;

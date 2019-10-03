@@ -19,6 +19,7 @@ import CatElectroPogr from '../components/news/units/catElectroPogr/CatElectroPo
 import LogInPage from '../containers/LogInPage';
 import Dashboard from '../containers/Dashboard';
 import AddAdvert from '../containers/AddAdvert';
+import AddNews from '../containers/AddNews';
 
 const SiteRouter = () => {
   return (
@@ -40,6 +41,7 @@ const SiteRouter = () => {
       <Route exact path='/log-in' component={LogInPage} />
       <PrivateRoute exact path='/dashboard' component={Dashboard} />
       <PrivateRoute exact path='/add-advert' component={AddAdvert} />
+      <PrivateRoute exact path='/add-news' component={AddNews} />
     </Switch>
   );
 };

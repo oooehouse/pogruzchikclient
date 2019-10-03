@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import './header.scss';
 
-const Header = ({ isAuthenticated, logOut, user }) => {
+const Header = ({ isAuthenticated, logOut, user, isAdmin }) => {
   const clickLogOut = () => logOut();
   return (
     <div className='header'>
@@ -11,6 +11,11 @@ const Header = ({ isAuthenticated, logOut, user }) => {
         <nav className='header-menu font-size-1-5em'>
           {isAuthenticated ? (
             <>
+              {user.isAdmin && (
+                <NavLink to='/add-news' className='header-menu-button'>
+                  <span className='font-size-1-5em'>Добавить новость</span>
+                </NavLink>
+              )}
               <NavLink to='/add-advert' className='header-menu-button'>
                 <i className='fas fa-plus font-size-1-5em'></i>
                 <span className='font-size-1-5em'>Добавить объявление</span>
